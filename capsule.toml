@@ -1,0 +1,27 @@
+# capsule version
+version = "0.7.1 c094e36"
+# path of deployment config file
+deployment = "deployment.toml"
+
+[rust]
+# path of rust contracts workspace directory,
+# a `Cargo.toml` file is expected under the directory.
+workspace_dir = "."
+toolchain = "nightly-2021-12-25"
+docker_image = "thewawar/ckb-capsule:2021-12-25"
+
+[[contracts]]
+name = "nft"
+template_type = "Rust"
+
+[[contracts]]
+name = "payment"
+template_type = "Rust"
+
+[[contracts]]
+name = "wallet"
+template_type = "Rust"
+
+[[contracts]]
+name = "kabletop"
+template_type = "C"

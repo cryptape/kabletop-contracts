@@ -1,0 +1,19 @@
+[workspace]
+members = [
+    "tests/kabletop",
+    "tests/wallet",
+    "tests/payment",
+    "tests/nft",
+    "contracts/nft",
+    "contracts/payment",
+    "contracts/wallet",
+    "contracts/common/util",
+    "contracts/common/secp256k1",
+]
+
+[profile.release]
+overflow-checks = true
+opt-level = 's'
+lto = true
+codegen-units = 1
+panic = 'abort'
