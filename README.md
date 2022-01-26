@@ -62,7 +62,7 @@ cd tests/payment
 capsule test -- --nocapture
 ```
 
-## Kabletop Contract
+## Kabletop Contract (or Channel Contract)
 
 It's writen in C, and integrated the whole Lua interpretor engine to run lua codes which represent the GamePlay logic in CKB-VM.
 
