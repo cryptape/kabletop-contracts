@@ -22,7 +22,7 @@ capsule build -n nft
 
 ``` sh
 cd tests/nft
-capsule test -- --nocapture
+cargo test -- --nocapture
 ```
 
 ## Wallet Contract
@@ -39,7 +39,7 @@ capsule build -n wallet
 
 ``` sh
 cd tests/wallet
-capsule test -- --nocapture
+cargo test -- --nocapture
 ```
 
 ## Payment Contract
@@ -61,7 +61,7 @@ If the owners of the wallet contract and the payment contract are the creators o
 
 ``` sh
 cd tests/payment
-capsule test -- --nocapture
+cargo test -- --nocapture
 ```
 
 ## Kabletop Contract (or Channel Contract)
@@ -81,5 +81,5 @@ The Kabletop contract only supports two-player turn-based matchmaking scenarios 
 
 ``` sh
 cd tests/kabletop
-capsule test -- --nocapture
+cargo test -- --nocapture
 ```
